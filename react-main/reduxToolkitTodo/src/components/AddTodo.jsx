@@ -5,7 +5,7 @@ import {addTodo} from '../features/todo/todoSlice'
 function AddTodo() {
 
     const [input, setInput] = useState('')
-    const dispatch = useDispatch()
+    const dispatch = useDispatch() // dispatch uses reducers to make changes in store
 
     const addTodoHandler = (e) => {
         e.preventDefault()
